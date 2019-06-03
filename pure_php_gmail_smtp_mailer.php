@@ -32,10 +32,10 @@ try {
 //	$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
 	// Content
-	$mail->isHTML(true);                                  // Set email format to HTML
-	$mail->Subject = 'Here is the subject';
-	$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+	$mail->isHTML(false);                                  // Set email format to HTML
+	$mail->Subject = 'Hello subject';
+	$mail->Body    = 'Hello Body';
+//	$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 	$mail->send();
 } catch (Exception $e) {
